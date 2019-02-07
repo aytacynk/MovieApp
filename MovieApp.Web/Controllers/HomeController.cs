@@ -11,9 +11,13 @@ namespace MovieApp.Web.Controllers
     {
         public IActionResult Index()
         {
-
-
             return View(MovieRepository.Movies);
+        }
+
+        public IActionResult Details(int? id)
+        {
+
+            return View(MovieRepository.Movies.FirstOrDefault(x => x.Id == id));
         }
     }
 }

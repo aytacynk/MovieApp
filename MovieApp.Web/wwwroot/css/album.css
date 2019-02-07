@@ -32,3 +32,15 @@ footer {
     footer p {
         margin-bottom: .25rem;
     }
+
+.card {
+    padding: .75rem;
+    margin-bottom: 2rem;
+    border: 0;
+}
+
+    .card > img {
+        margin-bottom: .75rem;
+        width: 100%;
+        border-radius: 3px;
+    }
