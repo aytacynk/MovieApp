@@ -6,18 +6,12 @@
 <hr />
 <div class="container">
     <div class="row">
-        <div class="col-md-4">
-            <ul class="list-group">
-                <li class="list-group-item">Sit amet, consectetur.</li>
-                <li class="list-group-item">Adipiscing elit fusce.</li>
-                <li class="list-group-item">Vel sapien elit.</li>
-                <li class="list-group-item">In malesuada semper.</li>
-                <li class="list-group-item">Mi, id sollicitudin.</li>
-            </ul>
+        <div class="col-md-3">
+            @await Component.InvokeAsync("Menu")
         </div>
-        <div class="col-md-8">
+        <div class="col-md-9">
             <div class="card" width="50">
-                <img src="~/img/@Model.Image" class="card-img-top" alt="@Model.Name" >
+                <img src="~/img/@Model.Image" class="card-img-top" alt="@Model.Name">
                 <div class="card-body">
                     <h5 class="card-title">@Model.Name</h5>
                     <p class="card-text">@Model.Description</p>
